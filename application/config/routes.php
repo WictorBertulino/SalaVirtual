@@ -5,3 +5,6 @@ $route['default_controller'] = 'Login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['Dashboard/Home'] = 'DashboardAdmin/HomeControllerAdmin';
+$route['Dashboard/Professores'] = 'DashboardAdmin/ProfessoresHomeController';
+
+$route['Login/ValidandoUsuario'] = 'Login/ValidandoLogin';

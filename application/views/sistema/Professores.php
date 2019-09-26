@@ -63,76 +63,64 @@
 
 </div> -->
       <div class="content">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="card card-stats">
-              <div class="card-body ">
-                <div class="row">
-                  <div class="col-5 col-md-4">
-                    <div class="icon-big text-center icon-warning">
-                      <i class="nc-icon nc-circle-10 text-warning"></i>
-                    </div>
-                  </div>
-                  <div class="col-7 col-md-8">
-                    <div class="numbers">
-                      <p class="card-category">Professores</p>
-                      
-                        <p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
+        <div class="w-100">
+        <button type="button" class="btn btn-primary float-right">Adicionar Professor</button>
 
-
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="card card-stats">
-              <div class="card-body ">
-                <div class="row">
-                  <div class="col-5 col-md-4">
-                    <div class="icon-big text-center icon-warning">
-                      <i class="nc-icon nc-circle-10 text-success"></i>
-                    </div>
-                  </div>
-                  <div class="col-7 col-md-8">
-                    <div class="numbers">
-                      <p class="card-category">Alunos</p>
-                      
-                        <p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="card card-stats">
-              <div class="card-body ">
-                <div class="row">
-                  <div class="col-5 col-md-4">
-                    <div class="icon-big text-center icon-warning">
-                      <i class="nc-icon nc-ruler-pencil text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="col-7 col-md-8">
-                    <div class="numbers">
-                      <p class="card-category">Conteúdos</p>
-                     
-                        <p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-          </div>
-    
         </div>
+        <br>
+        <br>
+        <br>
+        
+     <div class="row">
+     <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"> Simple Table</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        Nome
+                      </th>
+                      <th>
+                        Email
+                      </th>
+                      <th>
+                        Senha
+                      </th>
+                      <th >
+                        Matéria
+                      </th>
 
+
+
+                    </thead>
+                    <tbody>
+                      {professores}
+                      <tr>
+                        <td>{nome}</td>
+                        <td>{usuario}</td>
+                        <td>{senha}</td>
+                        <td>{materia}</td>
+                      {/professores}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
       </div>
+
+
+
+
+
+
+
+
       <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
           <div class="row">
