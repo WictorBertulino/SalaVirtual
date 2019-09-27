@@ -81,6 +81,7 @@
               <div class="alert alert-success " style="width:50%" role="alert">
                   Cadastrado com sucesso
               </div>
+              
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
