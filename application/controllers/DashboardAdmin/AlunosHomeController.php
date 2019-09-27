@@ -28,7 +28,7 @@ class AlunosHomeController extends CI_Controller {
 		$this->AlunosModel->setNome($this->input->post('nome'));
 		$this->AlunosModel->setUsuario($this->input->post('usuario'));	
 		$this->AlunosModel->setSenha($this->input->post('senha'));	
-		$this->AlunosModel->setMateria($this->input->post('materia'));		
+		$this->AlunosModel->setMateria('-');		
 		$registro = $this->AlunosModel->NovoAluno();
 		if($registro){
 			$this->session->set_flashdata('NovoAlunoSucesso', 'Cadastrado com sucesso!');
