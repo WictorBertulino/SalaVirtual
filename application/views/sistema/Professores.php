@@ -105,8 +105,8 @@
                         <td>{nome}</td>
                         <td>{usuario}</td>
                         <td>{materia}</td>
-                        <td><button class="btn btn-primary">Ver Conteúdos<button></td>
-                        <td><button class="btn btn-success">Editar Acesso<button></td>
+                        <td><button class="btn btn-primary">Ver Conteúdos</button></td>
+                        <td><button class="btn btn-success">Editar Acesso</button></td>
                         
                        
                       {/professores}
