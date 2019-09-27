@@ -78,10 +78,11 @@
                 <h4 class="card-title"> Professores</h4>
               </div>
               <div class="card-body">
+              <?php if ($this->session->flashdata("Insert")) { ?>
               <div class="alert alert-success " style="width:50%" role="alert">
                   Cadastrado com sucesso
               </div>
-              
+              <?php }?>
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
