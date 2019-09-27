@@ -64,7 +64,7 @@
 </div> -->
       <div class="content">
         <div class="w-100">
-        <button type="button" class="btn btn-primary float-right">Adicionar Professor</button>
+        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#ModalCadastroCliente">Adicionar Professor</button>
 
         </div>
         <br>
@@ -87,14 +87,16 @@
                       <th>
                         Email
                       </th>
-                      <th>
-                        Senha
-                      </th>
+                    
                       <th >
                         Matéria
                       </th>
-
-
+                      <th>
+                        Conteúdos
+                      </th>
+                      <th>
+                        Editar Acesso
+                      </th>
 
                     </thead>
                     <tbody>
@@ -102,8 +104,11 @@
                       <tr>
                         <td>{nome}</td>
                         <td>{usuario}</td>
-                        <td>{senha}</td>
                         <td>{materia}</td>
+                        <td><button class="btn btn-primary">Ver Conteúdos<button></td>
+                        <td><button class="btn btn-success">Editar Acesso<button></td>
+                        
+                       
                       {/professores}
                     </tbody>
                   </table>
@@ -137,7 +142,47 @@
     </div>
   </div>
   
+  <div class="modal fade" id="ModalCadastroCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cadastro de Professor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form method="post" action="Professores/NovoProfessor">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nome Completo</label>
+      <input type="text" class="form-control" required  name="nome" placeholder="Nome Completo">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Matéria</label>
+      <input type="text" class="form-control"  required name="materia" placeholder="Matéria">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Email de acesso</label>
+    <input type="email" class="form-control" required name="usuario" placeholder="Email de Acesso">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Senha de acesso</label>
+    <input type="password" class="form-control" required  name="senha" placeholder="Senha de Acesso">
+  </div>
  
+  
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>

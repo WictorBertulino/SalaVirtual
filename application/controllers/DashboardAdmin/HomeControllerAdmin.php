@@ -11,4 +11,6 @@ class HomeControllerAdmin extends CI_Controller {
 		$this->load->view('sistema/Home');
         $this->load->view('sistema/includes/footer');
 	}
+
+	
 }

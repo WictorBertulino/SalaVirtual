@@ -63,18 +63,18 @@ class ProfessoresModel extends CI_Model
             $this->tipo = $tipo;
         }
 
-    public function GetProfessores(){
-        $query = $this->db->get_where('usuarios', array('tipo'=> 2));  
+    public function GetAlunos(){
+        $query = $this->db->get_where('usuarios', array('tipo'=> 3));  
         return $query->result();
     }
 
-    public function NovoProfessor(){
+    public function NovoAluno(){
        $data  = array(
            'nome'=>$this->getNome(),
            'usuario'=>$this->getUsuario(),
            'materia'=>$this->getMateria(),
            'senha'=>$this->getSenha(),
-           'tipo'=>2
+           'tipo'=>3
        );
        $insert = $this->db->insert('usuarios',$data);
        return $insert;
