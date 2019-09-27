@@ -78,9 +78,9 @@
                 <h4 class="card-title"> Professores</h4>
               </div>
               <div class="card-body">
-              <div class="alert alert-success" role="alert">
-  Cadastrado
-</div>
+              <div class="alert alert-success " style="width:50%" role="alert">
+                  Cadastrado com sucesso
+              </div>
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
