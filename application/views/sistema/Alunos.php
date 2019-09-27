@@ -150,7 +150,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <form method="post" action="Professores/NovoAluno">
+      <form method="post" action="Alunos/NovoAluno">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Nome Completo</label>
