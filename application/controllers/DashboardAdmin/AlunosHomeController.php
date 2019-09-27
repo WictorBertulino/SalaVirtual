@@ -23,20 +23,20 @@ class AlunosHomeController extends CI_Controller {
          $this->load->view('sistema/includes/footer');
 	}
 
-	// public function NovoProfessor()
-	// {
-	// 	$this->ProfessoresModel->setNome($this->input->post('nome'));
-	// 	$this->ProfessoresModel->setUsuario($this->input->post('usuario'));	
-	// 	$this->ProfessoresModel->setSenha($this->input->post('senha'));	
-	// 	$this->ProfessoresModel->setMateria($this->input->post('materia'));		
-	// 	$registro = $this->ProfessoresModel->NovoProfessor();
-	// 	if($registro){
-	// 		$this->session->set_flashdata('NovoProfessorSucesso', 'Cadastrado com sucesso!');
-	// 		header('Location:../Professores');
-	// 	}else{
-	// 		$this->session->set_flashdata('ErroNovoProfessor', 'Ocorreu um erro inesperado!');
-	// 		header('Location:../Professores');
-	// 	}
-	// }
+	public function NovoAluno()
+	{
+		$this->AlunosModel->setNome($this->input->post('nome'));
+		$this->AlunosModel->setUsuario($this->input->post('usuario'));	
+		$this->AlunosModel->setSenha($this->input->post('senha'));	
+		$this->AlunosModel->setMateria($this->input->post('materia'));		
+		$registro = $this->AlunosModel->NovoAluno();
+		if($registro){
+			$this->session->set_flashdata('NovoAlunoSucesso', 'Cadastrado com sucesso!');
+			header('Location:../Alunos');
+		}else{
+			$this->session->set_flashdata('ErroNovoProfessor', 'Ocorreu um erro inesperado!');
+			header('Location:../Alunos');
+		}
+	}
 
 }
