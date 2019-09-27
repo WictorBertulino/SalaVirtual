@@ -12,13 +12,13 @@
             </a>
           </li>
           <li>
-            <a href="Dashboard/Home">
+            <a href="Alunos">
               <i class="nc-icon nc-circle-10 "></i>
               <p>Alunos</p>
             </a>
           </li>
           <li>
-            <a href="Dashboard/Home">
+            <a href="Conteudos">
               <i class="nc-icon nc-ruler-pencil"></i>
               <p>Conteúdos</p>
             </a>
