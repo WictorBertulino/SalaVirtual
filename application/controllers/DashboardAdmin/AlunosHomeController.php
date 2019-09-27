@@ -17,10 +17,10 @@ class AlunosHomeController extends CI_Controller {
 		$data = array(
 			'alunos'=>$this->AlunosModel->GetAlunos()
 		);
-        var_dump($data);
-        //  $this->load->view('sistema/includes/head');
-		//  $this->parser->parse('sistema/Professores',$data);
-        //  $this->load->view('sistema/includes/footer');
+       
+         $this->load->view('sistema/includes/head');
+		 $this->parser->parse('sistema/Alunos',$data);
+         $this->load->view('sistema/includes/footer');
 	}
 
 	// public function NovoProfessor()
