@@ -64,7 +64,7 @@
 </div> -->
       <div class="content">
         <div class="w-100">
-        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#ModalCadastroCliente">Adicionar Professor</button>
+        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#ModalCadastroCliente">Adicionar Conteúdo</button>
 
         </div>
         <br>
@@ -75,7 +75,7 @@
      <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Conteudos</h4>
+                <h4 class="card-title"> Conteúdos</h4>
               </div>
               <div class="card-body">
               <?php if ($this->session->flashdata("NovoProfessorSucesso")) { ?>
@@ -87,21 +87,16 @@
                   <table class="table">
                     <thead class=" text-primary">
                       <th>
-                        Nome
+                        Título 
                       </th>
                       <th>
-                        Email
+                        Máteria
                       </th>
                     
                       <th >
-                        Matéria
+                        Professor
                       </th>
-                      <th>
-                        Conteúdos
-                      </th>
-                      <th>
-                        Editar Acesso
-                      </th>
+                     
 
                     </thead>
                     <tbody>
