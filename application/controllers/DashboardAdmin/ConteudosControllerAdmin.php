@@ -17,7 +17,7 @@ class ConteudosControllerAdmin extends CI_Controller {
         $this->load->library('upload');
         $curriculo    = $_FILES['curriculo'];
           $configuracao = array(
-            'upload_path'   => base_url().'/assets/conteudos',
+            'upload_path'   => './assets/conteudos/',
             'allowed_types' => 'pdf',
             'file_name'     => 'testee.pdf',
             'max_size'      => '500'
