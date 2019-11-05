@@ -12,6 +12,9 @@ class ConteudosControllerAdmin extends CI_Controller {
         $this->load->view('sistema/includes/footer');
 
 	}
-
+    public function NovoConteudo()
+	{
+	var_dump($this->input->post());
+	}
 	
 }

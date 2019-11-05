@@ -143,13 +143,13 @@
         </button>
       </div>
       <div class="modal-body">
-      <form method="post" action="Professores/NovoProfessor">
+      <form method="post" action="Conteudo/NovoConteudo" >
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Nome Completo</label>
-      <input type="text" class="form-control" required  name="nome" placeholder="Nome Completo">
+      <label for="inputEmail4">Teste</label>
+      <input type="text" class="form-control" required  name="nome" placeholder="teste">
     </div>
-    <div class="form-group col-md-6">
+    <!-- <div class="form-group col-md-6">
       <label for="inputPassword4">Matéria</label>
       <input type="text" class="form-control"  required name="materia" placeholder="Matéria">
     </div>
@@ -161,7 +161,7 @@
   <div class="form-group">
     <label for="inputAddress2">Senha de acesso</label>
     <input type="password" class="form-control" required  name="senha" placeholder="Senha de Acesso">
-  </div>
+  </div> -->
  
   
   <button type="submit" class="btn btn-primary">Cadastrar</button>
