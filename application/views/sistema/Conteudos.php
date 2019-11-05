@@ -143,7 +143,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <form method="post" action="Conteudo/NovoConteudo" >
+      <form method="post" action="Conteudos/NovoConteudo" >
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Teste</label>
