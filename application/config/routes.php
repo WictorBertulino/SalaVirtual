@@ -9,5 +9,6 @@ $route['Dashboard/Professores'] = 'DashboardAdmin/ProfessoresHomeController';
 $route['Dashboard/Alunos'] = 'DashboardAdmin/AlunosHomeController';
 $route['Dashboard/Alunos/NovoAluno'] = 'DashboardAdmin/AlunosHomeController/NovoAluno';
 $route['Dashboard/Professores/NovoProfessor'] = 'DashboardAdmin/ProfessoresHomeController/NovoProfessor';
+$route['Dashboard/Conteudos'] = 'DashboardAdmin/ConteudosControllerAdmin';
 
 $route['Login/ValidandoUsuario'] = 'Login/ValidandoLogin';
