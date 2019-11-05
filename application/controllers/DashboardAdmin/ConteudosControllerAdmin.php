@@ -7,7 +7,7 @@ class ConteudosControllerAdmin extends CI_Controller {
 	public function index()
 	{
     
-        echo "teste";
+        $this->load->view('sistema/includes/head');
 	}
 
 	
