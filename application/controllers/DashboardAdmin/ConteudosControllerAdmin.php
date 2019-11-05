@@ -8,6 +8,9 @@ class ConteudosControllerAdmin extends CI_Controller {
 	{
     
         $this->load->view('sistema/includes/head');
+        $this->load->view('sistema/Conteudos');
+        $this->load->view('sistema/includes/footer');
+
 	}
 
 	
