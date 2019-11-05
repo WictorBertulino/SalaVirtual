@@ -17,7 +17,7 @@ class ConteudosControllerAdmin extends CI_Controller {
         $this->load->library('upload');
         $curriculo    = $_FILES['curriculo'];
           $configuracao = array(
-            'upload_path'   => 'http://genius3.ddns.net/SalaVirtual/assets/conteudos',
+            'upload_path'   => base_url().'/assets/conteudos',
             'allowed_types' => 'pdf',
             'file_name'     => 'testee.pdf',
             'max_size'      => '500'
@@ -29,6 +29,7 @@ class ConteudosControllerAdmin extends CI_Controller {
         }else{
             echo "dr";
             echo $this->upload->display_errors();
+            echo base_url().'/assets/conteudos';
         }
 	}
 	
