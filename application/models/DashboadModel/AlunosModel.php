@@ -74,7 +74,7 @@ class AlunosModel extends CI_Model
            'usuario'=>$this->getUsuario(),
            'materia'=>$this->getMateria(),
            'senha'=>$this->getSenha(),
-           'tipo'=>3
+           'tipo'=>1
        );
        $insert = $this->db->insert('usuarios',$data);
        return $insert;
