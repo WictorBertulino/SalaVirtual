@@ -16,17 +16,19 @@ class ConteudosControllerAdmin extends CI_Controller {
 	{
        $dadosDB = array(
         "idUsuario"=>$this->session->userdata('idSession'),
-        "nomeUsuario"=>$this->session->userdata('nameUserSession')
+        "nomeUsuario"=>$this->session->userdata('nameUserSession'),
+        "tituloArquivo"=>$this->input->post("titulo"),
+        "NomeArquivo"=>$this->input->post("titulo")
        );
 
        var_dump($dadosDB);
 
-       var_dump($_FILES);
        
+
         //   $configuracao = array(
         //     'upload_path'   => './assets/conteudos',
-        //     'allowed_types' => 'pdf|png|jpeg|jpg',
-        //     'file_name'     => 'testee.pdf',
+        //     'allowed_types' => 'pdf,
+        //     'file_name'     => '.pdf',
         //     'max_size'      => '80000'
         //  );
 

@@ -147,7 +147,7 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Título</label>
-      <input type="text" class="form-control" required  name="nome" placeholder="Título">
+      <input type="text" class="form-control" required  name="titulo" placeholder="Título">
     </div>
 
     <input type="file" class="form-control" name="userFile">
