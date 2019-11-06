@@ -100,7 +100,13 @@
 
                     </thead>
                     <tbody>
-                
+                    {conteudos}
+                        <tr>
+                          <td>{titulo}</td>
+                          <td>{materia}</td>
+                          <td>{nome}</td>
+                        </tr>
+                    {/conteudos}
                     </tbody>
                   </table>
                 </div>
