@@ -146,10 +146,11 @@
       <form method="post" action="Conteudos/NovoConteudo" enctype="multipart/form-data" >
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Teste</label>
-      <input type="text" class="form-control" required  name="nome" placeholder="teste">
+      <label for="inputEmail4">Título</label>
+      <input type="text" class="form-control" required  name="nome" placeholder="Título">
     </div>
-    <input type="file" name="userFile">
+
+    <input type="file" class="form-control" name="userFile">
     <!-- <div class="form-group col-md-6">
       <label for="inputPassword4">Matéria</label>
       <input type="text" class="form-control"  required name="materia" placeholder="Matéria">

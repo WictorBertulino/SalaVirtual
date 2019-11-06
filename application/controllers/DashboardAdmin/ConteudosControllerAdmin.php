@@ -22,6 +22,7 @@ class ConteudosControllerAdmin extends CI_Controller {
        var_dump($dadosDB);
 
        var_dump($_FILES);
+       
         //   $configuracao = array(
         //     'upload_path'   => './assets/conteudos',
         //     'allowed_types' => 'pdf|png|jpeg|jpg',
@@ -39,7 +40,7 @@ class ConteudosControllerAdmin extends CI_Controller {
 		// 	$data = array( 'upload_data' => $this->upload->data() );
 		// }
     
-        
+
 	}
 	
 }
