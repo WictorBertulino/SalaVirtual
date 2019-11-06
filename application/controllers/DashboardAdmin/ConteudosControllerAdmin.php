@@ -41,8 +41,12 @@ class ConteudosControllerAdmin extends CI_Controller {
            echo $this->upload->display_errors();
 		    }
 		else{
-            echo "true";
-			$data = array( 'upload_data' => $this->upload->data() );
+            
+            $data = array( 'upload_data' => $this->upload->data() );
+            
+            var_dump($data);
+
+
 		}
     
 
