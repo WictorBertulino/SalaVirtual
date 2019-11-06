@@ -64,6 +64,10 @@
 </div> -->
       <div class="content">
         <div class="row">
+
+        <?php if ($this->session->userdata('TypeSession')==="3") {
+             
+             ?>
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
@@ -108,6 +112,9 @@
              
             </div>
           </div>
+
+          <?php 
+              } ?>
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
