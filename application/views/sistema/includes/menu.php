@@ -2,14 +2,12 @@
           <li>
             <a href="Home">
               <i class="nc-icon nc-bank"></i>
-              <p>Home</p>
+              <p>Home <?php echo $this->session->userdata('TypeSession');?></p>
             </a>
           </li>
 
 
-          <?php if($this->session->userdata('TypeSession') === 3){
-            
-            ?>
+         
           <li>
             <a href="Professores">
               <i class="nc-icon nc-circle-10 "></i>
@@ -23,9 +21,6 @@
             </a>
           </li>
 
-          <?php 
-          }
-            ?>
 
           <li>
             <a href="Conteudos">
