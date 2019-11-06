@@ -14,7 +14,7 @@ class ConteudosControllerAdmin extends CI_Controller {
 	}
     public function NovoConteudo()
 	{
-        $curriculo    = $_FILES['curriculo'];
+       
           $configuracao = array(
             'upload_path'   => './assets',
             'allowed_types' => 'pdf|png|jpeg|jpg',
