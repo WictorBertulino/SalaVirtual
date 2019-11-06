@@ -39,6 +39,7 @@ class ConteudosControllerAdmin extends CI_Controller {
 		// 	$data = array( 'upload_data' => $this->upload->data() );
 		// }
     
+        
 	}
 	
 }
