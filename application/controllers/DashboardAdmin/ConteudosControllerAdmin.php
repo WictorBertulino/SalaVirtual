@@ -20,31 +20,28 @@ class ConteudosControllerAdmin extends CI_Controller {
         "tituloArquivo"=>$this->input->post("titulo"),
         "NomeArquivo"=>$this->input->post("titulo")
        );
-
-       
-
-       
-
           $configuracao = array(
             'upload_path'   => './assets/conteudos',
             'allowed_types' => '*',
             'file_name'     => $this->input->post("titulo"),
             'max_size'      => '80000'
          );
-
-
-
-
          $this->load->library('upload',$configuracao);
          if( !$this->upload->do_upload('userFile') ){
             $error = array( 'error' => $this->upload->display_errors() );
            echo $this->upload->display_errors();
 		    }
-		else{
+		else{    
+            $this->load->model('DashboadModel/ConteudosModel');
+            $this->ConteudosModel->setIdProfessor($dadosDB["idUsuario"]);
+            $this->ConteudosModel->setTitulo($dadosDB["tituloArquivo"]);
+            $this->ConteudosModel->setNomeAquivo($dadosDB["NomeArquivo"]);
             
-            $data = array( 'upload_data' => $this->upload->data() );
-            
-            var_dump($data);
+            if($this->ConteudosModel->NovoConteudo()){
+                echo "Inserido";
+            }
+
+
 
 
 		}

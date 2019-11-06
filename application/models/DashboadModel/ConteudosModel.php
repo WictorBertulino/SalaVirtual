@@ -48,17 +48,9 @@ class ConteudosModel extends CI_Model
             'id_professor'=>$this->getIdProfessor(),
             'nome_arquivo'=>$this->getNomeAquivo(),
             'titulo'=>$this->getTitulo()
-          
         );
+        
         $insert = $this->db->insert('conteudos',$data);
         return $insert;
      }
-
-
-
-
-  
-
-
-
 }
