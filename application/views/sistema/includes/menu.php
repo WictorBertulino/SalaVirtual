@@ -2,16 +2,17 @@
           <li>
             <a href="Home">
               <i class="nc-icon nc-bank"></i>
-              <p>Home <?php if ($this->session->userdata('TypeSession')==="3") {
-              echo "true";
-              } 
-              ?></p>
+              <p>Home </p>
             </a>
           </li>
 
 
          
           <li>
+
+          <?php if ($this->session->userdata('TypeSession')==="3") {
+             
+              ?>
             <a href="Professores">
               <i class="nc-icon nc-circle-10 "></i>
               <p>Professores</p>
@@ -24,7 +25,8 @@
             </a>
           </li>
 
-
+    <?php 
+              } ?>
           <li>
             <a href="Conteudos">
               <i class="nc-icon nc-ruler-pencil"></i>
