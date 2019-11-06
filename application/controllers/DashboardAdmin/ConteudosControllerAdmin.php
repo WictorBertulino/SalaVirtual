@@ -14,23 +14,23 @@ class ConteudosControllerAdmin extends CI_Controller {
 	}
     public function NovoConteudo()
 	{
-        $this->load->library('upload');
         $curriculo    = $_FILES['curriculo'];
           $configuracao = array(
-            'upload_path'   => './assets/conteudos/',
-            'allowed_types' => 'pdf',
+            'upload_path'   => './assets',
+            'allowed_types' => 'pdf|png|jpeg|jpg',
             'file_name'     => 'testee.pdf',
             'max_size'      => '500'
          );
+         $this->load->library('upload',$configuracao);
 
-        $this->upload->initialize($configuracao);
-        if ($this->upload->do_upload('curriculo')){
-            echo "db";
-        }else{
-            echo "dr";
-            echo $this->upload->display_errors();
-            echo base_url().'/assets/conteudos';
-        }
+
+         if( !$this->upload->do_upload('userFile') ){
+			$error = array( 'error' => $this->upload->display_errors() );
+		    }
+		else{
+			$data = array( 'upload_data' => $this->upload->data() );
+		}
+    
 	}
 	
 }

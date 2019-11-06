@@ -149,7 +149,7 @@
       <label for="inputEmail4">Teste</label>
       <input type="text" class="form-control" required  name="nome" placeholder="teste">
     </div>
-    <input type="file" name="curriculo">
+    <input type="file" name="userFile">
     <!-- <div class="form-group col-md-6">
       <label for="inputPassword4">Matéria</label>
       <input type="text" class="form-control"  required name="materia" placeholder="Matéria">
