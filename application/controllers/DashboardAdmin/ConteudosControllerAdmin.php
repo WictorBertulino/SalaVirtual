@@ -28,7 +28,7 @@ class ConteudosControllerAdmin extends CI_Controller {
           $configuracao = array(
             'upload_path'   => './assets/conteudos',
             'allowed_types' => 'pdf',
-            'file_name'     => $this->input->post("titulo").'.pdf',
+            'file_name'     => $this->input->post("titulo"),
             'max_size'      => '80000'
          );
 
