@@ -107,7 +107,7 @@
                           <td>{titulo}</td>
                           <td>{materia}</td>
                           <td>{nome}</td>
-                          <td><button class="btn btn-success">Baixar</button></td>
+                          <td><button class="btn btn-success"><i class="fas fa-download"></i> Baixar</button></td>
                         </tr>
                     {/conteudos}
                     </tbody>
