@@ -96,7 +96,9 @@
                       <th >
                         Professor
                       </th>
-                     
+                      <th >
+                        Baixar
+                      </th>
 
                     </thead>
                     <tbody>
@@ -105,6 +107,7 @@
                           <td>{titulo}</td>
                           <td>{materia}</td>
                           <td>{nome}</td>
+                          <td><button class="btn btn-class">Baixar</button></td>
                         </tr>
                     {/conteudos}
                     </tbody>
