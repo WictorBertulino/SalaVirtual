@@ -7,7 +7,9 @@
           </li>
 
 
-          <?php echo $this->session->userdata('TypeSession');?>
+          <?php if($this->session->userdata('TypeSession') === 3){
+            
+            ?>
           <li>
             <a href="Professores">
               <i class="nc-icon nc-circle-10 "></i>
@@ -21,7 +23,9 @@
             </a>
           </li>
 
-
+          <?php 
+          }
+            ?>
 
           <li>
             <a href="Conteudos">
