@@ -46,7 +46,7 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Sair</a>
+                  <a class="dropdown-item" href="http://genius3.ddns.net/SalaVirtual">Sair</a>
                   
                 </div>
               </li>
