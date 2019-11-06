@@ -5,6 +5,9 @@
               <p>Home</p>
             </a>
           </li>
+
+
+          <?php echo $this->session->userdata('TypeSession');?>
           <li>
             <a href="Professores">
               <i class="nc-icon nc-circle-10 "></i>
@@ -17,6 +20,9 @@
               <p>Alunos</p>
             </a>
           </li>
+
+
+
           <li>
             <a href="Conteudos">
               <i class="nc-icon nc-ruler-pencil"></i>
