@@ -21,26 +21,29 @@ class ConteudosControllerAdmin extends CI_Controller {
         "NomeArquivo"=>$this->input->post("titulo")
        );
 
-       var_dump($dadosDB);
+       
 
        
 
-        //   $configuracao = array(
-        //     'upload_path'   => './assets/conteudos',
-        //     'allowed_types' => 'pdf,
-        //     'file_name'     => '.pdf',
-        //     'max_size'      => '80000'
-        //  );
+          $configuracao = array(
+            'upload_path'   => './assets/conteudos',
+            'allowed_types' => 'pdf',
+            'file_name'     => $this->input->post("titulo").'.pdf',
+            'max_size'      => '80000'
+         );
 
-        //  $this->load->library('upload',$configuracao);
-        //  if( !$this->upload->do_upload('userFile') ){
-        //     $error = array( 'error' => $this->upload->display_errors() );
-        //    echo $this->upload->display_errors();
-		//     }
-		// else{
-        //     echo "true";
-		// 	$data = array( 'upload_data' => $this->upload->data() );
-		// }
+
+
+
+         $this->load->library('upload',$configuracao);
+         if( !$this->upload->do_upload('userFile') ){
+            $error = array( 'error' => $this->upload->display_errors() );
+           echo $this->upload->display_errors();
+		    }
+		else{
+            echo "true";
+			$data = array( 'upload_data' => $this->upload->data() );
+		}
     
 
 	}
