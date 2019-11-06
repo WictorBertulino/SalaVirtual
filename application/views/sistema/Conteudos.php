@@ -64,7 +64,13 @@
 </div> -->
       <div class="content">
         <div class="w-100">
+        
+        <?php if ($this->session->userdata('TypeSession')==="2") {
+             ?>
         <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#ModalCadastroCliente">Adicionar Conteúdo</button>
+        <?php 
+              } 
+        ?>
 
         </div>
         <br>
