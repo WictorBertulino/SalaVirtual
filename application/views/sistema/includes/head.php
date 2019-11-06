@@ -10,6 +10,8 @@
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+
   <!-- CSS Files -->
   <link href="<?=base_url()?>/assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="<?=base_url()?>/assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
