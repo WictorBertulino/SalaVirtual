@@ -6,7 +6,8 @@ class ConteudosControllerAdmin extends CI_Controller {
 	
 	public function index()
 	{
-    
+        $this->load->model('DashboadModel/ConteudosModel');
+
         $this->load->view('sistema/includes/head');
 
         $dados = array(
