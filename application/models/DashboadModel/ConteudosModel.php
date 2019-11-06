@@ -49,8 +49,15 @@ class ConteudosModel extends CI_Model
             'nome_arquivo'=>$this->getNomeAquivo(),
             'titulo'=>$this->getTitulo()
         );
-        
         $insert = $this->db->insert('conteudos',$data);
+        $this->db->close();
         return $insert;
      }
+
+     public function BuscarConteudos(){
+        $data  = $this->db->query("SELECT * from conteudos LEFT JOIN usuarios on conteudos.id_professor = usuarios.id");
+        $this->db->close();
+        return $data->result();
+     }
+
 }

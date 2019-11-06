@@ -8,7 +8,11 @@ class ConteudosControllerAdmin extends CI_Controller {
 	{
     
         $this->load->view('sistema/includes/head');
-        $this->load->view('sistema/Conteudos');
+
+        $dados = array(
+            'conteudos'=>$this->ConteudosModel->BuscarConteudos()
+        );
+        $this->parser->parse('sistema/Conteudos',$dados);
         $this->load->view('sistema/includes/footer');
 
 	}
@@ -30,8 +34,8 @@ class ConteudosControllerAdmin extends CI_Controller {
          if( !$this->upload->do_upload('userFile') ){
             $error = array( 'error' => $this->upload->display_errors() );
            echo $this->upload->display_errors();
-		    }
-		else{    
+
+		}else{    
             $this->load->model('DashboadModel/ConteudosModel');
             $this->ConteudosModel->setIdProfessor($dadosDB["idUsuario"]);
             $this->ConteudosModel->setTitulo($dadosDB["tituloArquivo"]);
@@ -42,11 +46,7 @@ class ConteudosControllerAdmin extends CI_Controller {
                 header('Location:../Conteudos');
                 
             }
-
-
-
-
-		}
+        }
     
 
 	}
