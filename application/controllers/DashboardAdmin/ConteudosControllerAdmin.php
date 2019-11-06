@@ -25,9 +25,11 @@ class ConteudosControllerAdmin extends CI_Controller {
 
 
          if( !$this->upload->do_upload('userFile') ){
-			$error = array( 'error' => $this->upload->display_errors() );
+            $error = array( 'error' => $this->upload->display_errors() );
+           echo $this->upload->display_errors();
 		    }
 		else{
+            echo "true";
 			$data = array( 'upload_data' => $this->upload->data() );
 		}
     
