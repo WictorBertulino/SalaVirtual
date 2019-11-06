@@ -2,7 +2,10 @@
           <li>
             <a href="Home">
               <i class="nc-icon nc-bank"></i>
-              <p>Home <?php echo $this->session->userdata('TypeSession');?></p>
+              <p>Home <?php if ($this->session->userdata('TypeSession')==="3") {
+              echo "true";
+              } 
+              ?></p>
             </a>
           </li>
 
