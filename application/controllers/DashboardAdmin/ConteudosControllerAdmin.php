@@ -14,24 +14,30 @@ class ConteudosControllerAdmin extends CI_Controller {
 	}
     public function NovoConteudo()
 	{
-       
-          $configuracao = array(
-            'upload_path'   => './assets',
-            'allowed_types' => 'pdf|png|jpeg|jpg',
-            'file_name'     => 'testee.pdf',
-            'max_size'      => '500'
-         );
-         $this->load->library('upload',$configuracao);
+       $dadosDB = array(
+        "idUsuario"=>$this->session->userdata('idSession'),
+        "nomeUsuario"=>$this->session->userdata('nameUserSession')
+       );
 
+       var_dump($dadosDB);
 
-         if( !$this->upload->do_upload('userFile') ){
-            $error = array( 'error' => $this->upload->display_errors() );
-           echo $this->upload->display_errors();
-		    }
-		else{
-            echo "true";
-			$data = array( 'upload_data' => $this->upload->data() );
-		}
+       var_dump($_FILES);
+        //   $configuracao = array(
+        //     'upload_path'   => './assets/conteudos',
+        //     'allowed_types' => 'pdf|png|jpeg|jpg',
+        //     'file_name'     => 'testee.pdf',
+        //     'max_size'      => '80000'
+        //  );
+
+        //  $this->load->library('upload',$configuracao);
+        //  if( !$this->upload->do_upload('userFile') ){
+        //     $error = array( 'error' => $this->upload->display_errors() );
+        //    echo $this->upload->display_errors();
+		//     }
+		// else{
+        //     echo "true";
+		// 	$data = array( 'upload_data' => $this->upload->data() );
+		// }
     
 	}
 	
