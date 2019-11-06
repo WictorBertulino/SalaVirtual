@@ -38,7 +38,9 @@ class ConteudosControllerAdmin extends CI_Controller {
             $this->ConteudosModel->setNomeAquivo($dadosDB["NomeArquivo"]);
             
             if($this->ConteudosModel->NovoConteudo()){
-                echo "Inserido";
+                $this->session->set_flashdata('UploadCompleto', 'Arquivo '.$dadosDB["NomeArquivo"].' Foi Cadastrado com sucesso!');
+                header('Location:../Conteudos');
+                
             }
 
 
