@@ -64,7 +64,7 @@ class AlunosModel extends CI_Model
         }
 
     public function GetAlunos(){
-        $query = $this->db->get_where('usuarios', array('tipo'=> 3));  
+        $query = $this->db->get_where('usuarios', array('tipo'=> 1));  
         return $query->result();
     }
 
