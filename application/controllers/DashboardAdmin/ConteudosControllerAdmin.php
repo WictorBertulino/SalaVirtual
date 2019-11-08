@@ -64,7 +64,7 @@ class ConteudosControllerAdmin extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('download');
         $nomeConteudo = "teste.sql";
-        $path = file_get_contents('http://genius3.ddns.net/SalaVirtual/assets/conteudos/teste.sql');
+        $path = file_get_contents('./assets/conteudos/teste.sql');
         $name =$nomeConteudo;
         force_download($name, $path ); 
     }
