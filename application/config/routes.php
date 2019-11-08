@@ -11,6 +11,6 @@ $route['Dashboard/Alunos/NovoAluno'] = 'DashboardAdmin/AlunosHomeController/Novo
 $route['Dashboard/Professores/NovoProfessor'] = 'DashboardAdmin/ProfessoresHomeController/NovoProfessor';
 $route['Dashboard/Conteudos'] = 'DashboardAdmin/ConteudosControllerAdmin';
 $route['Dashboard/Conteudos/NovoConteudo'] = 'DashboardAdmin/ConteudosControllerAdmin/NovoConteudo';
-$route['Dashboard/Conteudos/DownloadConteudo'] = 'DashboardAdmin/ConteudosControllerAdmin/DownloadConteudo';
+$route['Dashboard/Conteudos/DownloadConteudo/(:any)'] = 'DashboardAdmin/ConteudosControllerAdmin/DownloadConteudo';
 
 $route['Login/ValidandoUsuario'] = 'Login/ValidandoLogin';

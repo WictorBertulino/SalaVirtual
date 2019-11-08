@@ -51,16 +51,11 @@ class ConteudosControllerAdmin extends CI_Controller {
     
 
 
-    }
-    
+    } 
     public  function DownloadConteudo()
     {
 
-
-
-
         
-
         $this->load->helper('url');
         $this->load->helper('download');
         $nomeConteudo = "teste.pdf";
