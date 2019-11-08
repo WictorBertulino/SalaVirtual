@@ -58,9 +58,10 @@ class ConteudosControllerAdmin extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('download');
         $nomeConteudo = $this->uri->segment(4);
-        $path = file_get_contents('./assets/conteudos/'.$nomeConteudo.'.pdf');
-        $name =$nomeConteudo;
-        force_download($name, $path ); 
+        echo $nomeConteudo;
+        // $path = file_get_contents('./assets/conteudos/'.$nomeConteudo.'.pdf');
+        // $name =$nomeConteudo;
+        // force_download($name, $path); 
     }
 	
 }
