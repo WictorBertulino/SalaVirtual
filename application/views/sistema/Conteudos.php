@@ -113,7 +113,7 @@
                           <td>{titulo}</td>
                           <td>{materia}</td>
                           <td>{nome}</td>
-                          <td><a class="btn btn-success" href="Conteudos/DonwloadConteudo/{nome_arquivo}"><i class="fas fa-download"></i>  Baixar</a></td>
+                          <td><a class="btn btn-success" href="Conteudos/DownloadConteudo/{nome_arquivo}"><i class="fas fa-download"></i>  Baixar</a></td>
                         </tr>
                     {/conteudos}
                     </tbody>
