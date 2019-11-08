@@ -63,7 +63,7 @@ class ConteudosControllerAdmin extends CI_Controller {
 
         $this->load->helper('url');
         $this->load->helper('download');
-        $nomeConteudo = "Aula-1.pdf";
+        $nomeConteudo = "teste";
         $path = file_get_contents('http://genius3.ddns.net/SalaVirtual/assets/conteudos/Aula-1.pdf');
         $name =$nomeConteudo;
         force_download($name, $path ); 
