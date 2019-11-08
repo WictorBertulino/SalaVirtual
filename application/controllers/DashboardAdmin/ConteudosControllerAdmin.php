@@ -61,13 +61,12 @@ class ConteudosControllerAdmin extends CI_Controller {
 
         
 
-    //     $this->load->helper('url');
-    //     $this->load->helper('download');
-
-    //     $nomeConteudo = "Aula-1.pdf";
-    // $path = file_get_contents('http://www.iserastreamento.com.br/sistema/assets/apk/painelise.apk');
-    //     $name = 'PainelIse.apk';
-    //     force_download($name, $path ); 
+        $this->load->helper('url');
+        $this->load->helper('download');
+        $nomeConteudo = "Aula-1.pdf";
+        $path = file_get_contents('http://genius3.ddns.net/SalaVirtual/assets/conteudos/'.$nomeConteudo);
+        $name =$nomeConteudo;
+        force_download($name, $path ); 
     }
 	
 }
