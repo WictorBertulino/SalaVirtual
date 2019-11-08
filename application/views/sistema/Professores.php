@@ -11,12 +11,12 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+        <a href="/index.php/Home" class="simple-text logo-mini">
           <div class="logo-image-small">
             <img src="<?=base_url()?>/assets/img/logo-small.png">
           </div>
         </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        <a href="/index.php/Home" class="simple-text logo-normal">
          Sala Virtual
           <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
