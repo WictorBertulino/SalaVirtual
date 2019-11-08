@@ -79,7 +79,7 @@
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Professores</p>
+                      <a href="Professores" class="card-category">Professores</a>
                       
                         <p>
                     </div>
@@ -102,7 +102,7 @@
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Alunos</p>
+                    <a href="Alunos" class="card-category">Alunos</a>
                       
                         <p>
                     </div>
