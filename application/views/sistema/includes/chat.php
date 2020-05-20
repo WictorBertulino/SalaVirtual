@@ -5,15 +5,12 @@
   <form action="/action_page.php" class="form-container">
     <h1>Chat</h1>
     <ul >
-      <li>Nome : message</li>
-      <li>Nome : message</li>
-      <li>Nome : message</li>
-      <li>Nome : message</li>
-      <li>Nome : message</li>
-      <li>Nome : message</li>
+      <li>Wictor : Olá mundo</li>
+      <li>João : Olá tudo bem</li>
+      
     </ul>
     <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <textarea placeholder="Digite sua mensagem" name="msg" required></textarea>
 
     <button type="submit" class="btn">Enviar Mensagem</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
