@@ -10,7 +10,7 @@
 
     </ul>
     <label for="msg"><b>Message</b></label>
-    <input placeholder="Digite sua mensagem" id="msg" name="msg" required></input>
+    <textarea placeholder="Digite sua mensagem" id="msg" name="msg" required></textarea>
 
     <button type="submit" class="btn">Enviar Mensagem</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
