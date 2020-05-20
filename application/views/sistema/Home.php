@@ -159,16 +159,7 @@
     </div>
   </div>
   
- 
+ <?php $this->load->view('sistema/includes/chat.php')?>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
-<script>
-  let socket = io('http://localhost:3000')
 
-
-  function enviarData(){
-  let obj = {Nome:"João Wictor", Message:'Olá mundo'}
-  socket.emit('sendMessage',obj);
-  }
-</script>
 </html>
