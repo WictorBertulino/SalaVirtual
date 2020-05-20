@@ -26,7 +26,7 @@
     document.getElementById("myForm").style.display = "none";
   }
 
-  let socket = io('http://localhost:3000')
+  let socket = io('http://genius3.ddns.net:3000')
 
 
   function enviarData() {
