@@ -1,7 +1,7 @@
 <button class="open-button" onclick="openForm()">Discussão</button>
 
 <div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
+  <form  class="form-container">
     <h1>Chat</h1>
     <ul>
       <li>Wictor : Olá mundo</li>
@@ -11,7 +11,7 @@
     <label for="msg"><b>Message</b></label>
     <textarea placeholder="Digite sua mensagem" id="msg" name="msg" required></textarea>
 
-    <button type="submit" class="btn">Enviar Mensagem</button>
+    <button onclick="enviarData()" class="btn">Enviar Mensagem</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
   </form>
 </div>
