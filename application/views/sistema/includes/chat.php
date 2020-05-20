@@ -1,37 +1,8 @@
 
-<div class="container text-center">
-	<div class="row">
-		<h2>Open in chat (popup-box chat-popup)</h2>
-        <h4>Click Here</h4>
-        <div class="round hollow text-center">
-        <a href="#" id="addClass"><span class="glyphicon glyphicon-comment"></span> Open in chat </a>
-        </div>
-        
-        <hr>
-        
-        MORE :
-        <a target="_blank" href="http://bootsnipp.com/snippets/33ejn">Whatsapp Chat Box POPUP</a>,
-         <a target="_blank" href="http://bootsnipp.com/snippets/z4P39"> Creative User Profile  </a>
-         
-	</div>
-</div>
-
-
 <div class="popup-box chat-popup" id="qnimate">
     		  <div class="popup-head">
-				<div class="popup-head-left pull-left"><img src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" alt="iamgurdeeposahan"> Gurdeep Osahan</div>
 					  <div class="popup-head-right pull-right">
-						<div class="btn-group">
-    								  <button class="chat-header-button" data-toggle="dropdown" type="button" aria-expanded="false">
-									   <i class="glyphicon glyphicon-cog"></i> </button>
-									  <ul role="menu" class="dropdown-menu pull-right">
-										<li><a href="#">Media</a></li>
-										<li><a href="#">Block</a></li>
-										<li><a href="#">Clear Chat</a></li>
-										<li><a href="#">Email Chat</a></li>
-									  </ul>
-						</div>
-						
+				
 						<button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button"><i class="glyphicon glyphicon-off"></i></button>
                       </div>
 			  </div>
