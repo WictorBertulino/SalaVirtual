@@ -8,8 +8,8 @@
     <label for="msg"><b>Message</b></label>
     <textarea placeholder="Type message.." name="msg" required></textarea>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="submit" class="btn">Enviar Mensagem</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
   </form>
 </div>
 
