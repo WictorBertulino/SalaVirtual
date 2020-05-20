@@ -3,9 +3,8 @@
 <div class="chat-popup" id="myForm">
   <div  class="form-container">
     <h1>Chat</h1>
-    <ul>
-      <li>Wictor : Olá mundo</li>
-      <li>João : Olá tudo bem</li>
+    <ul id="listMessage">
+      
 
     </ul>
     <label for="msg"><b>Message</b></label>
@@ -35,4 +34,9 @@
     }
     socket.emit('sendMessage', obj);
   }
+
+  socket.on('receivedMessage', function(data){
+    document.getElementById("listMessage").innerHTML += "<li>"+data.Nome+" : "+data.Message;  
+
+  })
 </script>
