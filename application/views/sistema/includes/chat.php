@@ -8,7 +8,7 @@
 
     </ul>
     <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Digite sua mensagem" id="msg" name="msg" required></textarea>
+    <input placeholder="Digite sua mensagem" id="msg" name="msg" required></input>
 
     <button onclick="enviarData()" class="btn">Enviar Mensagem</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
