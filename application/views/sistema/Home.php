@@ -159,10 +159,16 @@
     </div>
   </div>
   
- 
+ <button onclick="enviarData()">Enviar data</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
 <script>
   let socket = io('http://localhost:3000')
+
+
+  function enviarData(){
+  let obj = {Nome:"João Wictor", Message:'Olá mundo'}
+  socket.emit('sendMessage',obj);
+  }
 </script>
 </html>
