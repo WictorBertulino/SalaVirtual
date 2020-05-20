@@ -1,7 +1,7 @@
 <button class="open-button" onclick="openForm()">Discussão</button>
 
 <div class="chat-popup" id="myForm">
-  <form  class="form-container">
+  <div  class="form-container">
     <h1>Chat</h1>
     <ul>
       <li>Wictor : Olá mundo</li>
@@ -13,7 +13,7 @@
 
     <button onclick="enviarData()" class="btn">Enviar Mensagem</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
-  </form>
+</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js" integrity="sha256-OgiHfllOBEOiWQ2OcBsDncRG2k7QBW9Rs1dB7MH2N2s=" crossorigin="anonymous"></script>
 <script>
