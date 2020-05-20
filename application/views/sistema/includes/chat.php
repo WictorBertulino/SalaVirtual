@@ -33,6 +33,7 @@
       Message:document.getElementById("msg").value
     }
     socket.emit('sendMessage', obj);
+    document.getElementById("msg").value = ""
   }
 
   socket.on('teste', function(data){
