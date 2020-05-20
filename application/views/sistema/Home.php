@@ -139,7 +139,7 @@
             
             </div>
           </div>
-          <?php $this->load->view('sistema/includes/chat.php')?>
+     <?php $this->load->view('sistema/includes/chat.php')?>
 
         </div>
 
