@@ -1,7 +1,7 @@
 <button class="open-button" onclick="openForm()">Discussão</button>
 
 <div class="chat-popup" id="myForm">
-  <form  class="form-container" onsubmit="enviarData()">
+  <form  class="form-container" onsubmit="event.preventDefault();enviarData()">
     <h1>Chat</h1>
     <input style="display: none" id="name" value="<?=$this->session->userdata('nameUserSession')?>">
     <ul id="listMessage">
@@ -29,7 +29,7 @@
   let socket = io('http://localhost:3000')
 
 
-  function enviarData(event) {
+  function enviarData() {
     event.preventDefault();
     let obj = {
       Nome: document.getElementById("name").value,
