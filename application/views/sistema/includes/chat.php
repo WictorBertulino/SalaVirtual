@@ -31,7 +31,7 @@
   function enviarData() {
     let obj = {
       Nome: "João Wictor",
-      Message:document.getElementById("id").value
+      Message:document.getElementById("msg").value
     }
     socket.emit('sendMessage', obj);
   }
