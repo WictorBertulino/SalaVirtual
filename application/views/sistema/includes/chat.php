@@ -1,11 +1,16 @@
 
-<button class="open-button" onclick="openForm()">Chat</button>
+<button class="open-button" onclick="openForm()">Discussão</button>
 
 <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
     <h1>Chat</h1>
-    <ul>
-      <li>Nome:message</li>
+    <ul >
+      <li>Nome : message</li>
+      <li>Nome : message</li>
+      <li>Nome : message</li>
+      <li>Nome : message</li>
+      <li>Nome : message</li>
+      <li>Nome : message</li>
     </ul>
     <label for="msg"><b>Message</b></label>
     <textarea placeholder="Type message.." name="msg" required></textarea>
