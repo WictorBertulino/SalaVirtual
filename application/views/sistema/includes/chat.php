@@ -3,7 +3,9 @@
 <div class="chat-popup" id="myForm">
   <div  class="form-container">
     <h1>Chat</h1>
+    <input style="display: none" id="name" value="<?=$this->session->userdata('nameUserSession')?>">
     <ul id="listMessage">
+
       
 
     </ul>
@@ -29,7 +31,7 @@
 
   function enviarData() {
     let obj = {
-      Nome: "João Wictor",
+      Nome: document.getElementById("name").value,
       Message:document.getElementById("msg").value
     }
     socket.emit('sendMessage', obj);
