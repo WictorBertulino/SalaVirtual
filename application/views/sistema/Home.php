@@ -130,7 +130,7 @@
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <a href="Conteudos" class="card-category" >Conteúdos</a>
-                      <button onclick="enviarData()">Enviar data</button>
+                      
                         <p>
                     </div>
                   </div>
@@ -139,7 +139,8 @@
             
             </div>
           </div>
-    
+          <?php $this->load->view('sistema/includes/chat.php')?>
+
         </div>
 
       </div>
@@ -159,7 +160,6 @@
     </div>
   </div>
   
- <?php $this->load->view('sistema/includes/chat.php')?>
 </body>
 
 </html>
