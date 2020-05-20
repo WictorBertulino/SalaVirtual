@@ -35,8 +35,7 @@
     socket.emit('sendMessage', obj);
   }
 
-  socket.on('teste', function(message){
-    console.log(message);
+  socket.on('teste', function(data){
     
     document.getElementById("listMessage").innerHTML += "<li>"+data.Nome+" : "+data.Message;  
 
