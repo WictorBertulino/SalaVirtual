@@ -1,5 +1,5 @@
 
-<div class="popup-box chat-popup" id="qnimate">
+<div class="popup-box chat-popup 'popup-box-on'" id="qnimate">
     		  <div class="popup-head">
 					  <div class="popup-head-right pull-right">
 				
@@ -78,12 +78,7 @@
                   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
 <script>
-    $(function(){
-
-          $('#qnimate').addClass('popup-box-on');
-            
-          
-  })
+   
   let socket = io('http://localhost:3000')
 
 
