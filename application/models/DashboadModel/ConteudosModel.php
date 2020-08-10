@@ -59,5 +59,11 @@ class ConteudosModel extends CI_Model
         $this->db->close();
         return $data->result();
      }
+     public function BuscarConteudosIdProfessor(){
+        $data  = $this->db->query("SELECT * from conteudos LEFT JOIN usuarios on conteudos.id_professor = usuarios.id where id_professor=".$this->getIdProfessor().";");
+        $this->db->close();
+        return $data->result();
+     }
+     
 
 }

@@ -12,5 +12,6 @@ $route['Dashboard/Professores/NovoProfessor'] = 'DashboardAdmin/ProfessoresHomeC
 $route['Dashboard/Conteudos'] = 'DashboardAdmin/ConteudosControllerAdmin';
 $route['Dashboard/Conteudos/NovoConteudo'] = 'DashboardAdmin/ConteudosControllerAdmin/NovoConteudo';
 $route['Dashboard/Conteudos/DownloadConteudo/(:any)'] = 'DashboardAdmin/ConteudosControllerAdmin/DownloadConteudo';
+$route['Api/Conteudos/GetConteudoForProfessorId/(:any)'] = 'Api/ApiControllerConteudo/GetConteudoProfessorId';
 
 $route['Login/ValidandoUsuario'] = 'Login/ValidandoLogin';

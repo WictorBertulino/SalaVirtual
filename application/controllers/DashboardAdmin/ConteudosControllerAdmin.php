@@ -9,10 +9,19 @@ class ConteudosControllerAdmin extends CI_Controller {
         $this->load->model('DashboadModel/ConteudosModel');
 
         $this->load->view('sistema/includes/head');
-
-        $dados = array(
-            'conteudos'=>$this->ConteudosModel->BuscarConteudos()
-        );
+        
+        if ($this->session->userdata("TypeSession")!=2) {
+            $dados = array(
+                'conteudos'=>$this->ConteudosModel->BuscarConteudos()
+            );
+        }else{
+            $this->ConteudosModel->setIdProfessor($this->session->userdata("idSession"));
+            $dados = array(
+                'conteudos'=>$this->ConteudosModel->BuscarConteudosIdProfessor()
+            );
+        }
+         
+       
         $this->parser->parse('sistema/Conteudos',$dados);
         $this->load->view('sistema/includes/footer');
 

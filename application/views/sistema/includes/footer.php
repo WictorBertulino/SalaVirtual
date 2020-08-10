@@ -12,3 +12,5 @@
   <script src="<?=base_url()?>/assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
   <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
   <script src="<?=base_url()?>/assets/demo/demo.js"></script>
+
+

@@ -7,9 +7,7 @@
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-    -->
+     
       <div class="logo">
         <a href="/SalaVirtual/index.php/Dashboard/Home" class="simple-text logo-mini">
           <div class="logo-image-small">
@@ -110,7 +108,7 @@
                         <td>{nome}</td>
                         <td>{usuario}</td>
                         <td>{materia}</td>
-                        <td><button class="btn btn-primary">Ver Conteúdos</button></td>
+                        <td><button class="btn btn-primary" data-toggle="modal" onclick="getConteudos(this.value)" value="{id}"data-target="#ModalGetConteudo" >Ver Conteúdos</button></td>
                         <td><button class="btn btn-success">Editar Acesso</button></td>
                         
                        
@@ -188,6 +186,64 @@
     </div>
   </div>
 </div>
-</body>
 
+
+<div class="modal fade" id="ModalGetConteudo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Conteudos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Título</th>
+      <th scope="col">Matéria</th>
+      <th scope="col">Professor</th>
+    </tr>
+  </thead>
+  <tbody id="table-conteudo">
+  
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script>
+function getConteudos(id){
+  document.getElementById("table-conteudo").innerHTML ="";
+  axios.get('../Api/Conteudos/GetConteudoForProfessorId/'+id)
+  
+        .then(response => {
+
+          response.data.forEach(function(item, index){
+            
+            document.getElementById("table-conteudo").innerHTML +=
+             "<tr>"+
+              "<td>"+item.titulo+"</td>"+
+              "<td>"+item.materia+"</td>"+
+              "<td>"+item.nome+"</td>"+
+            "</tr>";
+          });
+
+            
+            
+        })
+        .catch(error => {
+            console.log(error)
+        })
+}
+</script>
 </html>
